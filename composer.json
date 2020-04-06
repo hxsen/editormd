@@ -1,14 +1,14 @@
 {
-    "name": "hxsen/editormd",
-    "description": "description...",
+    "name": "hxsen/laravel-admin-editormd",
+    "description": "EditorMD extension for laravel-admin",
     "type": "library",
-    "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/hxsen/editormd",
+    "keywords": ["laravel-admin", "extension", "laravel-admin-editormd"],
+    "homepage": "https://github.com/hxsen/laravel-admin-editormd",
     "license": "MIT",
     "authors": [
         {
-            "name": "your name",
-            "email": "your email"
+            "name": "hxsen",
+            "email": "hx@hxsen.com"
         }
     ],
     "require": {

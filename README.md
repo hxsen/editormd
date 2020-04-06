@@ -2,7 +2,7 @@ laravel-admin extension
 ======
 ### 安装
 ```
-composer require hxsen/editormd
+composer require hxsen/laravel-admin-editormd
 ```
 ### 发布资源
 ```
