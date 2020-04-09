@@ -42,7 +42,10 @@ php artisan vendor:publish --provider=Hxsen\EditorMd\EditorMdServiceProvider
 ```
 ### 用法
 ```php
+- 添加/编辑页面
 $form->editormd('content');
+- 显示/预览页面
+$show->field('content', __('Content'))->editormd();
 ```
 ### 注意
 如果您想在Laravel-admin选项卡组件中使用，你应该将该配置选项"dynamicMode"设置为true，以避免错误。
