@@ -29,6 +29,7 @@ class EditorField extends Field
     // 获取配置并追加配置
     private function getConfigText(){
         $config = (array) config('admin.extensions.editormd.config');
+        $config['readOnly'] = false;
 
         return json_encode($config);
 

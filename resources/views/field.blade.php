@@ -47,8 +47,8 @@
             $(this).hide();
             @endif
             // 实例化代码的主体
-            let config = Object.assign({id: '{{ $column }}'}, {!! $config !!});
-            editorMd{{ $column }} = editormd(config);
+            let config = {!! $config !!};
+            editorMd{{ $column }} = editormd('{{ $column }}', config);
             // Fix editormd V1.5.0 bug (Previewing close button default set to show when loaded).
             $("#{{ $column }}").find(".editormd-preview-close-btn").hide();
             // Set the content value type.

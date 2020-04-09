@@ -1,9 +1,8 @@
 <div id="{{ $eleId }}">
     <textarea  style="display:none;">{{ $value }}</textarea>
 </div>
-<script >
+<script>
     $(function(){
-        let config = Object.assign({id:'{{ $eleId }}'}, {!! $config !!});
-        editorMd{{ $eleId }} = editormd(config);
+        editorMd{{ $eleId }} = editormd('{{ $eleId }}', {!! $config !!});
     })
 </script>
