@@ -6,7 +6,7 @@ use Encore\Admin\Form\Field;
 
 class EditorField extends Field
 {
-    protected $view = 'editormd::index';
+    protected $view = 'editormd::field';
 
     protected static $css = [
         'vendor/hxsen/editormd/editor.md/css/editormd.min.css'
