@@ -4,6 +4,7 @@ namespace Hxsen\EditorMd;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Form;
+use Encore\Admin\Show;
 use Illuminate\Support\ServiceProvider;
 
 class EditorMdServiceProvider extends ServiceProvider
@@ -35,6 +36,7 @@ class EditorMdServiceProvider extends ServiceProvider
         // 启动该插件的时候
         Admin::booting(function () {
             Form::extend('editormd', EditorField::class);
+            Show::extend('editormd', EditorShow::class);
         });
         // 启动成功之后加载
         Admin::booted(function () {
