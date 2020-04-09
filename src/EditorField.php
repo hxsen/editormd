@@ -18,18 +18,11 @@ class EditorField extends Field
 
     public function render()
     {
-        $dynamicMode = config('admin.extensions.markdown.dynamicMode', false);
-        $config = $this->getConfigText();
-        $valueType = config('admin.extensions.markdown.valueType');
-
-        // 定义可能使用到的变量
-        $data = [
-            'dynamicMode'=>$dynamicMode,
-            'config' => $config,
-            'valueType' => $valueType,
-            'column'=>$this->id
+        $this->variables = [
+            'dynamicMode' => config('admin.extensions.editormd.dynamicMode', false),
+            'wideMode' => config('admin.extensions.editormd.wideMode', false),
+            'config' => $this->getConfigText(),
         ];
-        $this->script = view('editormd::script', $data)->render();
 
         return parent::render();
     }
